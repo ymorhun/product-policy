@@ -41,7 +41,8 @@ PRIMARY KEY (user_id, product_policy_id)
 
 create table alternative (
 alternative_id SERIAL PRIMARY KEY,
-title varchar(64)
+title varchar(64),
+alternative_type varchar(64)
 );
 
 create table alternative_level (
@@ -111,5 +112,6 @@ create table production_cost (
 alternative_id integer REFERENCES product,
 material_id integer REFERENCES material,
 volume_per_piece numeric(15,3),
+product_policy_id integer REFERENCES product_policy
 PRIMARY KEY (alternative_id, material_id)
 );
