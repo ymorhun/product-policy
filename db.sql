@@ -112,6 +112,32 @@ create table production_cost (
 alternative_id integer REFERENCES product,
 material_id integer REFERENCES material,
 volume_per_piece numeric(15,3),
-product_policy_id integer REFERENCES product_policy
+product_policy_id integer REFERENCES product_policy,
 PRIMARY KEY (alternative_id, material_id)
 );
+
+INSERT INTO "role" VALUES
+(1, 'OFR'),
+(2, 'OPR'),
+(3, 'EXPERT');
+
+INSERT INTO "user" VALUES
+(1, 'Ярослав', 'Моргун', 'opr_1@gmail.com', '12041995'),
+(2, 'Іван', 'Іванов', 'ofr_1@gmail.com', '1111'),
+(3, 'Георгій', 'Миколайович', 'expert_1@gmail.com', '5555'),
+(4, 'Семен', 'Олексійович', 'expert_2@gmail.com', '12345');
+
+INSERT INTO user_role (user_id, role_id) VALUES
+(1,2),
+(2,1),
+(3,3),
+(4,3);
+
+INSERT INTO unit VALUES
+(1, 'кг'),
+(2, 'шт');
+
+INSERT INTO material VALUES
+(1, 1, 'Папір'),
+(2, 1, 'Вода'),
+(3, 2, 'Комп''ютер');
