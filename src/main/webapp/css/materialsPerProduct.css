@@ -1,0 +1,23 @@
+.product_column_header, .material_column_header {
+    display: inline-block;
+    width: 150px;
+    height: 20px;
+    font-weight: bold;
+}
+
+.product_cell {
+    display: inline-block;
+    width: 150px;
+    height: 20px;
+    font-weight: bold;
+}
+
+.material_input {
+    display: inline-block;
+    width: 150px;
+    height: 20px;
+}
+
+.material_input input {
+    width: 150px;
+}

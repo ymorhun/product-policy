@@ -1,0 +1,24 @@
+.hierarchy_level_block button {
+    color: #fff;
+    background-color: #6496c8;
+    text-shadow: -1px 1px #417cb8;
+    border: none;
+    height: 25px;
+    margin: 10;
+}
+
+.hierarchy_level_block button:hover,
+.hierarchy_level_block button.hover {
+  background-color: #346392;
+  text-shadow: -1px 1px #27496d;
+}
+
+.hierarchy_level_block button:active,
+.hierarchy_level_block button.active {
+  background-color: #27496d;
+  text-shadow: -1px 1px #193047;
+}
+
+.hierarchy_element {
+    margin: 10;
+}
